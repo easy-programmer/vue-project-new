@@ -10,6 +10,7 @@
     </ul>
     <ul>
       <li><router-link v-bind:to="{ name: 'HelloBoard' }">Main</router-link></li>
+      <li><router-link v-bind:to="{ name: 'SmBoard' }">SmBoard</router-link></li>
     </ul>
     <router-view/>
   </div>

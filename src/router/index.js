@@ -5,6 +5,7 @@ import HelloGrid from '@/components/HelloGrid'
 import SmGrid from '@/components/smGrid'
 import Movie from '@/components/Movie'
 import HelloBoard from '@/components/HelloBoard'
+import SmBoard from '@/components/SmBoard'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/HelloBoard',
       name: 'HelloBoard',
       component: HelloBoard
+    },
+    {
+      path: '/smBoard',
+      name: 'SmBoard',
+      component: SmBoard
     }
   ]
 })
