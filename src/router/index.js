@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import HelloGrid from '@/components/HelloGrid'
-import SmGrid from '@/components/smGrid'
-import Movie from '@/components/Movie'
+import HelloGrid from '@/components/table/HelloGrid'
+import SmGrid from '@/components/table/smGrid'
+import Movie from '@/components/table/Movie'
 import HelloBoard from '@/components/HelloBoard'
 import SmBoard from '@/components/SmBoard'
 

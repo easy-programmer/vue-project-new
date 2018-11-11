@@ -12,6 +12,14 @@
       :rows="rows"
       :pagination-options="{enabled: true, perPage: 5 }"
       :search-options="{enabled: true}"
+      :line-numbers="true"
+      :selectOptions="{
+        enabled: true,
+        selectOnCheckboxOnly: true, // only select when checkbox is clicked instead of the row
+        selectionInfoClass: 'custom-class',
+        selectionText: 'rows selected',
+        clearSelectionText: 'clear',
+      }"
       styleClass="vgt-table striped"
       >
     </vue-good-table>
@@ -27,41 +35,49 @@ export default {
         {
           label: '포스터',
           field: 'poster',
-          html: true
+          html: true,
+          thClass: 'custom-th-class text-center'
         },
         {
           label: '제목',
-          field: 'title'
+          field: 'title',
+          thClass: 'custom-th-class text-center'
         },
         {
           label: '관람일자',
           field: 'date',
           type: 'date',
           dateInputFormat: 'YYYYMMDD',
-          dateOutputFormat: 'YYYY-MM-DD'
+          dateOutputFormat: 'YYYY-MM-DD',
+          thClass: 'custom-th-class text-center'
         },
         {
           label: '장르',
-          field: 'jenre'
+          field: 'jenre',
+          thClass: 'custom-th-class text-center'
         },
         {
           label: '감독',
-          field: 'director'
+          field: 'director',
+          thClass: 'custom-th-class text-center'
         },
         {
           label: '출연진',
-          field: 'people'
+          field: 'people',
+          thClass: 'custom-th-class text-center'
         },
         {
           label: '명장면/명대사',
           field: 'favoriteScene',
-          html: true
+          html: true,
+          thClass: 'custom-th-class text-center'
         },
         {
           label: 'Score',
           field: 'score',
-          formatFn: this.formatFn
-        },
+          formatFn: this.formatFn,
+          thClass: 'custom-th-class text-center'
+        }
       ],
       rows: [
         { id:1,
@@ -144,4 +160,9 @@ export default {
 </script>
 
 <style>
+table.vgt-table {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-size: 12px; }
+table.vgt-table th {
+  color: #404041; }
 </style>
