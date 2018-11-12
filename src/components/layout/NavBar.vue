@@ -2,6 +2,11 @@
   <div id="app">
     <b-navbar toggleable="md" type="dark" variant="dark">
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+      <button type="button" class="v-toolbar__side-icon v-btn v-btn--icon theme--dark" style>
+        <div>
+            <i aria-hidden="true" class="v-icon material-icons theme--dark">menu</i>&nbsp;&nbsp;
+        </div>
+      </button>
       <b-navbar-brand tag="h1" href="/">Easy Project</b-navbar-brand>
 
       <b-collapse is-nav id="nav_collapse">
@@ -12,6 +17,7 @@
               <b-dropdown-item href="#"><router-link v-bind:to="{ name: 'HelloGrid' }">bootstrap-vue</router-link></b-dropdown-item>
               <b-dropdown-item href="#"><router-link v-bind:to="{ name: 'Movie' }">vue-good-table</router-link></b-dropdown-item>
               <b-dropdown-item href="#"><router-link v-bind:to="{ name: 'SmGrid' }">vuetable-2</router-link></b-dropdown-item>
+              <b-dropdown-item href="#"><router-link v-bind:to="{ name: 'VuetifyTable' }">Vuetify Table</router-link></b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
 
@@ -27,7 +33,6 @@
           </b-nav-item-dropdown>
 
           <b-nav-item-dropdown right>
-            <!-- Using button-content slot -->
             <template slot="button-content">
               <em>User</em>
             </template>

@@ -6,6 +6,7 @@ import SmGrid from '@/components/table/smGrid'
 import Movie from '@/components/table/Movie'
 import HelloBoard from '@/components/HelloBoard'
 import SmBoard from '@/components/SmBoard'
+import VuetifyTable from '@/components/table/VuetifyTable'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/smBoard',
       name: 'SmBoard',
       component: SmBoard
+    },
+    {
+      path: '/vuetifyTable',
+      name: 'VuetifyTable',
+      component: VuetifyTable
     }
   ]
 })
