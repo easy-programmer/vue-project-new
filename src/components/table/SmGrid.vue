@@ -5,7 +5,7 @@
     (2018-09-21) Data Binding(?)<br/>
     (2018-09-21) Beginner Guide : <a href="https://joshua1988.github.io/web_dev/vuejs-tutorial-for-beginner/">https://joshua1988.github.io/web_dev/vuejs-tutorial-for-beginner/</a><br/>
     (2018-10-02) Field Fomatting / Grid Paging >>> [Formmating 설치] :  npm install --save accounting / npm install --save moment
-    (2018-11-11) npm install --save vue-events
+    (2018-11-11) npm install --save vue-events          install 추가
     <br/>
   </p>
   <!-- 
